@@ -1,24 +1,24 @@
 --Database for transform items/toys
 
 -- Current entries
--- Brazier of Dancing Flames [1]
--- Dire Brew [2]
--- Muradin's Favor [3]
--- Iron Boot Flask [4]
--- Burgy Blackheart's Handsome Hat [5]
--- Gnomeregan Pride [6]
--- Time-Lost Figurine [7]
--- Orb of the Sin'dorei [8]
--- Orb of Deception [9]
--- Vial of Green Goo [10]
--- Savory Deviate Delight [11]
--- Kalytha's Haunted Locket [12]
--- Carved Ogre Idol [13]
--- Gordok Ogre Suit [14]
--- Magical Ogre Idol [15]
--- Mr. Smite's Brass Compass [16]
--- Krastinov's Bag of Horrors [17]
--- Potion of Illusion [18]
+-- [1] Brazier of Dancing Flames
+-- [2] Dire Brew
+-- [3] Muradin's Favor
+-- [4] Iron Boot Flask
+-- [5] Burgy Blackheart's Handsome Hat
+-- [6] Gnomeregan Pride
+-- [7] Time-Lost Figurine
+-- [8] Orb of the Sin'dorei
+-- [9] Orb of Deception
+-- [10] Vial of Green Goo
+-- [11] Savory Deviate Delight
+-- [12] Kalytha's Haunted Locket
+-- [13] Carved Ogre Idol
+-- [14] Gordok Ogre Suit
+-- [15] Magical Ogre Idol
+-- [16] Mr. Smite's Brass Compass
+-- [17] Krastinov's Bag of Horrors
+-- [18] Potion of Illusion
 
 local transformItems = {
     [1] = {
