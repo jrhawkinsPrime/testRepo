@@ -1,0 +1,48 @@
+--for storage of info related
+
+-----------------------------
+####################
+## Zone Template  ##
+####################
+Zone Name: [Enter Zone Name]
+
+Battle Pets:
+
+[Pet Name 1]
+
+[Pet Name 2]
+
+[Pet Name 3]
+
+
+Toys:
+
+[Toy Name 1]
+
+[Toy Name 2]
+
+[Toy Name 3]
+
+
+Transmogs (Tmog):
+
+[Item Name 1]
+
+[Item Name 2]
+
+[Item Name 3]
+
+
+Mounts:
+
+[Mount Name 1]
+
+[Mount Name 2]
+
+[Mount Name 3]
+
+
+Other:
+
+[Description of Other Content/Items]
+------------------------------------
