@@ -3,7 +3,7 @@
 
 local transportationMethods = {
     [1] = {
-        id = "dalaran_hearthstone",
+        id = 140192, --ItemID 140192
         name = "Dalaran Hearthstone",
         description = "Use your Dalaran Hearthstone, then take the Stormwind portal, followed by the Boralus portal.",
         itemLevel = 35,
@@ -19,10 +19,9 @@ local transportationMethods = {
             [1] = {
                 step = 1,
                 title = "Go to Stormwind",
-                description = "Travel to Stormwind using any available method.",
-                location = "Stormwind",
+                message = "Travel to Stormwind using any available method.",
+                startLocation = nil,
                 endLocation = "Stormwind",
-                message = "Ensure you are in Stormwind to start the questline.",
                 icon = "path/to/icon/stormwind.png",
                 ["spell/itemID"] = nil, -- No specific spell or item required for this step
                 notes = "Use your hearthstone, portal, or fly manually if needed."
