@@ -46,3 +46,99 @@ Other:
 
 [Description of Other Content/Items]
 ------------------------------------
+
+------------------------------------
+##############################
+#####     temp          ######
+##############################
+
+-- transportationMethods.lua
+-- This file contains reusable transportation methods for accessing various locations.
+
+local transportationMethods = {
+    [1] = {
+        id = "dalaran_hearthstone",
+        name = "Dalaran Hearthstone",
+        description = "Use your Dalaran Hearthstone, then take the Stormwind portal, followed by the Boralus portal.",
+        itemLevel = 35,
+        bindsWhenPickedUp = true,
+        unique = true,
+        type = "toy",
+        useEffect = "Teleports the caster to Dalaran. (20 Min Cooldown)",
+        cooldown = "20 minutes",
+        requiresLevel = 10,      requirements = "Requires Dalaran Hearthstone.",
+        additionalNotes = "Ensure you have a Hearthstone set to Dalaran from Legion content.",
+        dontHave = {
+            [1] = "Go to Stormwind.",
+            [2] = "Go to the Callboard.",
+            [3] = "Accept the Legion expansion quest.",
+            [4] = "Fly to the next step in the quest. Skip the intro.",
+            [5] = "Turn in the quest with the NPC that's right in front of you."
+        }
+    },
+    [2] = {
+        id = "mythic_plus_portal",
+        name = "Mythic Plus Dungeon Keystone Portal",
+        description = "Use the portal in your spellbook to teleport directly to Boralus.",
+        requirements = "Account-bound; all characters can use it.",
+        cooldown = "8 hours.",
+        type = "spell",
+        additionalNotes = "Found under the General tab in your spellbook.",
+        dontHave = {
+            [1] = "Go to Stormwind.",
+            [2] = "Go to the Callboard.",
+            [3] = "Accept the Legion expansion quest.",
+            [4] = "Fly to the next step in the quest. Skip the intro.",
+            [5] = "Turn in the quest with the NPC that's right in front of you."
+        }
+    },
+    [3] = {
+        id = "stormwind_cloak",
+        name = "Stormwind Cloak",
+        description = "Use the cloak to teleport to Stormwind, then use the Stormwind portal to reach Boralus.",
+        requirements = "Requires the Stormwind Cloak.",
+        cooldown = "Cooldown TBD.",
+        type = "item",
+        additionalNotes = "Ensure you have the cloak available in your inventory.",
+        dontHave = {
+            [1] = "Go to Stormwind.",
+            [2] = "Go to the Callboard.",
+            [3] = "Accept the Legion expansion quest.",
+            [4] = "Fly to the next step in the quest. Skip the intro.",
+            [5] = "Turn in the quest with the NPC that's right in front of you."
+        }
+    },
+    [4] = {
+        id = "boralus_ring",
+        name = "Teleportation Ring",
+        description = "Use the ring to teleport to Boralus.",
+        requirements = "Requires the teleportation ring.",
+        cooldown = "Cooldown TBD.",
+        type = "item",
+        additionalNotes = "This item must be obtained and equipped for use.",
+        dontHave = {
+            [1] = "Go to Stormwind.",
+            [2] = "Go to the Callboard.",
+            [3] = "Accept the Legion expansion quest.",
+            [4] = "Fly to the next step in the quest. Skip the intro.",
+            [5] = "Turn in the quest with the NPC that's right in front of you."
+        }
+    }
+}
+
+-- Function to get a transportation method by ID
+local function getTransportationMethodById(id)
+    for _, method in ipairs(transportationMethods) do
+        if method.id == id then
+            return method
+        end
+    end
+    return nil
+end
+
+-- Return the methods and utility functions
+return {
+    methods = transportationMethods,
+    getById = getTransportationMethodById
+}
+--------------------------------------
