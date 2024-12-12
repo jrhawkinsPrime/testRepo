@@ -169,3 +169,12 @@ return {
     getById = getTransportationMethodById
 }
 --------------------------------------
+
+###################################
+#####      SPEED SET       ########
+###################################
+
+Note:
+
+Possible items:
+-- Tailwind Regalia set 5-piece (only 2 needed for 5% movement speed bonus) (BFA)
